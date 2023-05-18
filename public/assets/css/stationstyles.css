@@ -1,0 +1,271 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+#filterForm{
+    width:95%;
+    padding: 25px 25px;
+    margin: 25px 25px 0px 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+    align-content: center;
+    column-gap:45px;
+    background-color: #f1f2f3;
+    border-radius: 15px;
+    grid-row:1/2;
+    grid-column:1/2;
+}
+
+.filterinput{
+    width: fit-content;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    column-gap:10px;
+
+}
+
+#filterbutton{
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-filters{
+    height:40px;
+    width: 150px;
+    border: 2px solid #35363A;
+    border-radius: 10px;
+    padding-left: 10px;
+    background-color: #f0f0f0;
+}
+
+.halfinputdropdown{
+    width: 150px;
+    border: 2px solid #35363A;
+    height: 40px;
+    background-color: #f1f2f3;
+    border-radius: 5px;
+}
+
+.primarybutton{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: #E14761;
+    color: #fff;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.primarybutton:hover{
+    cursor: pointer;
+}
+
+.stock-deets{
+    display: grid;
+    grid-auto-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+.new{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    background-color: #f1f1f3;
+    color: #35363A;
+    grid-row:1/2;
+    grid-column: 2/3;
+    margin:25px 25px 0px 0px;
+    padding:0px 20px 0px 20xp;
+}
+
+svg{
+    fill:#35363A;
+}
+
+.new:hover {
+    background-color: #E14761;
+    color: #fff;
+    cursor: pointer;
+}
+
+.new:hover svg{
+    fill: #fff !important;
+}
+
+/* =========== TABLE STYLES ============= */
+
+.table-container{
+    background-color: #f1f2f3;
+    border-radius: 16px;
+    grid-row:2/3;
+    grid-column:1/3;
+    width:96%;
+    margin:20px 25px;
+    padding:20px 25px;
+    overflow: scroll;
+    height:500px;
+}
+
+table{
+    width:100%;
+   
+}
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #fff;
+  }
+  
+  td[data-label="Fuel Type"] , td[data-label="Email"] {
+    width: 25%;
+  }
+
+  td[data-label="Date"], td[data-label="Time"],td[data-label="Name"]{
+    width: 15%;
+  }
+
+  td[data-label="Delete"], td[data-label="Update"],td[data-label="Fuel Amount"]{
+    width: 10%;
+  }
+
+  td[data-label="Online"], td[data-label="Delete"], td[data-label="Update"]{
+    text-align: center;
+  }
+  
+
+
+/* =========== NEW RESTOCK FORM STYLES ============= */
+h1{
+    margin:25px 0px 20px 10px;
+}
+
+.new-restock-form{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black with opacity */
+}
+
+.form-content{
+    background-color: white;
+    margin: 30px auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 50%; /* Could be more or less, depending on screen size */
+    height: 60%;
+    border-radius: 10px;
+    margin-top:100px;
+}
+
+.forum-form{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: top;
+    height: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+    .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.inputs3{
+    height:40px;
+    width:95%;
+    border-radius: 10px;
+    border: 0px;
+    padding-left: 20px;
+    background-color: #f0f0f0;
+    margin:3px 0px 3px 0px;
+}
+
+
+
+/* =========== OPERATORS SECTION STYLES ============= */
+
+.operator-deets{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap:10px;
+    /* margin:25px; */
+}
+
+.operators-table-container{
+    width: 100%;
+    background-color: #f1f2f3;
+    border-radius: 16px;
+    padding:25px 15px 15px 15px;
+    margin:25px;
+}
+
+th[colspan=2]{
+    text-align: center;
+}
+
+#divider{
+    height:90%;
+    width: 2px;
+    background-color: #35363A;
+    margin:30px 0px 30px 0px;
+}
+
+.op-form-content{
+    background-color: #f1f2f3;
+    padding: 20px;
+    width: 25%;
+    height: 60%;
+    border-radius: 16px;
+    margin:25px;
+}
+
+.inputs4{
+    height:40px;
+    width:95%;
+    border-radius: 10px;
+    border: 0px;
+    padding-left: 20px;
+    background-color: #fff;
+    margin:3px 0px 3px 0px;
+}
+
+h3{
+    margin:25px 0px 20px 10px;
+}

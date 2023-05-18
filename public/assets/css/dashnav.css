@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+  /* Navigation bar styles */
+/* changes the nav and dp photo */
+*{  
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f3;
+  height: 75px;
+}
+
+#nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding:12px
+}
+
+.item{
+  width: 150px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  width:50px;
+  margin-left: 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  margin-left: 25px;
+}
+
+.item a {
+  font-size: 1 rem;
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+
+.dp{
+    width:45px;
+    height:auto;
+    margin-right: 15px;
+}
+    
+.logocontainer{
+    width:fit-content;
+    margin: 0px 20px 0px 20px;
+}
+
+.dp{
+    margin-right: 10px;;
+    width:25px;
+    height:auto;
+}
+
+.dp:hover{
+    cursor: pointer;
+}
+
+.profilemenuwrap{
+  position: absolute;
+  top:10%;
+  right: 0%;
+  width: 320px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  border-radius: 10px;
+  z-index: 999;
+}
+
+.profilemenu{
+  background-color: #fafafa;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 10px;
+  margin-top: 10px;
+  z-index: inherit;
+}
+
+.profilemenuwrap.openmenu{
+  max-height: 500px;
+}
+
+.profilemenu-item{
+  padding: 13px;
+  /* border-bottom: 1px solid #000; */
+  cursor: pointer;
+}
+
+.profilemenu-item a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.profilemenu-item a:hover {
+  background-color: #f5f5f5;
+}
+
+.openmenu {
+  height: auto;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 50px;
+  margin-right: 15px;
+}
+.hamburger span {
+  color: #000;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFF;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 150px;
+  z-index: 999;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+.mobile-menu.is-open {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.mobile-menu a {
+	display: block;
+	padding: 1rem;
+	color: #35363A;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.25rem;
+	transition: 0.3s;
+}
+
+.mobile-menu a:hover {
+	color: #E14761;
+}
+
+
+@media(max-width: 768px){ 
+ 
+  .nav,.dp{
+    display: none;
+  }
+.mobile-menu, .hamburger {
+  display: flex;
+}
+
+.profilemenuwrap {
+  top: 50px;
+  right: 10px;
+}
+
+.mobile-menu {
+  display: flex;
+    position: absolute;
+    top:10%;
+    right: 0%;
+    width: 320px;
+    max-height: 0px;
+    border:0.5 solid black;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.profilemenu{
+    background-color: #fafafa;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.profilemenuwrap.openmenu{
+    max-height: 500px;
+}
+
+.profilemenu-item{
+    padding: 13px;
+    /* border-bottom: 1px solid #000; */
+    cursor: pointer;
+}
+}
+
+@media(min-width:900px){ 
+
+    .logocontainer{
+        width:fit-content;
+        margin: 0px 20px 0px 20px;
+    }
+    
+    .dp{
+        width:30px;
+        height:auto;
+    }
+
+}

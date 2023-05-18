@@ -1,0 +1,49 @@
+.data_view{
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    text-align: left;
+}
+
+
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.filter_button{
+    background-color: #E14761;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    padding: 10px;
+    margin-top: 10px;
+    width:100%
+}
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    margin-top: 10px;
+    width:100%
+}
+
+.filter_section{
+    padding: auto;
+}

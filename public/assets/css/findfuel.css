@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .container1 {
+    width:100%;
+      height: 100%;    
+      justify-content: center;
+      align-items: center;
+      padding:15px;
+  }
+  
+  
+
+  /* ======================= Cards ====================== */
+  
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }  
+
+
+
+  /* ================== container 2 ============== */
+  .containerbox{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+  }
+  .container{
+    display: flex;
+    width: 250px;
+    border-radius: 8px;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+  }
+  .circular-progress1{
+    position: relative;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background: conic-gradient(#E14761 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .circular-progress1::before{
+    content: "";
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  .progress-value1{
+    position: relative;
+    font-size: 28px;
+    font-weight: 600;
+    color: #E14761;
+  }
+  .circular-progress2{
+    position: relative;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background: conic-gradient(#E14761 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .circular-progress2::before{
+    content: "";
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  .progress-value2{
+    position: relative;
+    font-size: 28px;
+    font-weight: 600;
+    color: #E14761;
+  }
+  .circular-progress3{
+    position: relative;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background: conic-gradient(#E14761 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .circular-progress3::before{
+    content: "";
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  .progress-value3{
+    position: relative;
+    font-size: 28px;
+    font-weight: 600;
+    color: #E14761;
+  }
+  .circular-progress4{
+    position: relative;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background: conic-gradient(#E14761 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .circular-progress4::before{
+    content: "";
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  .progress-value4{
+    position: relative;
+    font-size: 28px;
+    font-weight: 600;
+    color: #E14761;
+  }
+  .text{
+    font-size: 20px;
+    font-weight: 100;
+    color: #606060;
+  }
+
+
+
+
+  /* ================== Fuel Details List ============== */
+  .details {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .details .recentStock {
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    background: #F0F0F0;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .details .cardHeader {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .details .cardHeader h2 {
+    font-weight: 600;
+    color: #E14761;
+  }
+  
+  .details .cardHeader .btn {
+    position: relative;
+    padding: 5px 10px;
+    background: #E14761;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 6px;
+  }
+  
+  .details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .details table thead td {
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .details .recentStock table tr {
+    color: #222;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .details .recentStock table tr:last-child {
+    border-bottom: none;
+  }
+
+  
+  .details .recentStock table tr td {
+    padding: 10px;
+  }
+  
+  .details .recentStock table tr td:last-child {
+    text-align: end;
+  }
+  
+  .details .recentStock table tr td:nth-child(2) {
+    text-align: end;
+  }
+  
+  .details .recentStock table tr td:nth-child(3) {
+    text-align: center;
+  }
+  
+
+
+
+
+  
+  
